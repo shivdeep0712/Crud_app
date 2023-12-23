@@ -1,7 +1,7 @@
 const User=require('../models/User')
 const Login=async(req,res)=>{
     try {
-        console.log("hello jaya",req.body)
+        console.log("hello Shivdeep",req.body)
         const { email,password } = req.body;
         if(!email || !password){
             return res.status(404).json({success:false,message:"all fields are required"})
